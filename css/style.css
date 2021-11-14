@@ -1,0 +1,152 @@
+:root{
+    --main-color:#222f3e;
+    --sec-color: #bdc3c7;
+    --thr-color: #0abde3;
+    --orange: #ee5253;
+    --black: #000000;
+    --font-size: 15px;
+
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+*{
+    box-sizing: border-box;
+    font-family: sans-serif ,'roboto';
+}
+
+/* start nav */
+.border{
+    border-top: 3px solid var(--orange);
+}
+nav{
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    /* border-top: 3px solid var(--orange); */
+}
+nav .logo{
+    display: flex;
+}
+nav .menu{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+nav .menu li{
+    width: 10%;
+    padding: 0 1%;
+}
+nav .menu li a{
+    text-decoration: none;
+    color: var(--sec-color);
+    text-transform: uppercase;
+    font-size: calc(var(--font-size) + 5px);
+    font-family: sans-serif;
+}
+nav .menu li a:hover{
+    color: var(--black);
+    font-weight: bold;
+    transition: all 0.7 ease-in-out;
+}
+/* start nav */
+/* slider start */
+.slider1{
+    display: flex;
+    background-color: var(--sec-color);
+    height: 80vh;
+    width: 100%;
+
+}
+.slider1 .slider{
+    display: flex;
+    background-image: url("../images/slider.jpg");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* justify-content: center;
+    align-items: center; */
+}
+.slider1 .slider .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: var(--main-color) ;
+    opacity: 0.70;
+}
+.slider1 .text{
+    background-color: var(--main-color);
+    padding: 0.5% 1%;
+    color: var(--sec-color);
+    position: absolute;
+    border-left: 3px solid var(--orange);
+    border-radius: 25px;
+    opacity: 0.80;
+    height: 30vh;
+    width: 25%;
+    top: 25%;
+    left: 12.5%;
+}
+#about{
+    text-align: center;
+    padding: 1% 5%;
+    position: absolute;
+    bottom: 0;
+}
+/* slider end */
+/* offers start */
+.offers-title{
+    text-align: center;
+    padding: 2% 0;
+}
+.offers{
+    width: 75%;
+    height: 60vh;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+*{
+    box-sizing: border-box;
+}
+.offers .offer{
+    text-align: center;
+    width: 33.33%;
+    padding: 1% 3%;
+}
+/* offers end */
+/* about us start */
+.list{
+    display: flex;
+    height: 100vh;
+    background-color: var(--black);
+}
+.list .column{
+    flex: 50%;
+    padding: 0% 15%;
+    color: blanchedalmond;
+}
+.list .column h3{
+    margin: 5% 10%;
+    color: var(--sec-color);
+    font-size: calc( var(--font-size) + 10px);
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.list .column i{
+    color: brown;
+}
+.list .info{
+    color: var(--sec-color);
+}
+/* about us end */
